@@ -1,4 +1,4 @@
-package Model1
+package Land.Ikman
 
 import akka.actor.{Actor, ActorLogging}
 import akka.kafka.scaladsl.SendProducer

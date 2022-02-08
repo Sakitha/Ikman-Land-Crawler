@@ -1,4 +1,4 @@
-package Model1
+package Land.Ikman
 
 import akka.actor.{Actor, ActorLogging, Props}
 
@@ -10,7 +10,6 @@ object AllAddGetter{
     Props(new AllAddGetter(urlsPerPage:List[String]))
 }
 class AllAddGetter (urls:List[String])(implicit exec:ExecutionContextExecutor) extends Actor with ActorLogging{
-  import Model1.AllAddGetter._
 
   var phasedCount = 0
   var adds:Set[Add] = Set()

@@ -1,5 +1,4 @@
-package Model1
-
+package Land.Ikman
 
 import akka.actor.{Actor, ActorLogging, ActorRef, Props}
 
@@ -9,7 +8,7 @@ object MonitoringAgent{
   def props(startingUrl:String,persistentActor:ActorRef) :Props = Props(new MonitoringAgent(startingUrl,persistentActor))
 }
 class MonitoringAgent(startingUrl:String,persistentActor:ActorRef) extends Actor with ActorLogging{
-  import Model1.MonitoringAgent._
+  import MonitoringAgent._
 
   def receive = crawlingPage(1)
   def crawlingPage(pageNumber:Int): Receive ={

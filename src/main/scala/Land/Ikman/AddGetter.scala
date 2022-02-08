@@ -1,4 +1,4 @@
-package Model1
+package Land.Ikman
 
 import akka.actor.{Actor, ActorLogging, Props}
 import akka.pattern.pipe
